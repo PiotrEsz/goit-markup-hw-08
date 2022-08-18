@@ -1,0 +1,25 @@
+body{
+    font-family:"Roboto","Raleway",sans-serif;
+    color:var(--grey);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+}
+:root{
+    --grey: 
+    #757575;
+    --black:#212121;
+    --background:#2F303A;
+}
+.studio{
+    color:blue;}
+
+.text{
+    font-weight: 500;
+    color:var(--black);
+    text-decoration: none;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+    .poo{
+        color:#757575
+    }

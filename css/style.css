@@ -63,7 +63,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    text-transform: uppercase;
+   
 }
 .btn{
     font-weight: 700;
@@ -87,4 +87,36 @@ body{
     line-height: 1,71;
     letter-spacing: 0.03em;
     
+}
+.second-header{
+    font-weight: 700;
+    font-size:36px;
+    line-height: 1,72;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color:var(--black);
+}
+.third-header{
+font-size: 36px;
+font-weight: 700;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-align: center;
+color:var(--black)
+
+}
+.name-person{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color:var(--black);
+
+}
+.profession{
+font-size: 16px;
+font-weight: 400;
+line-height: 1.19px;
+letter-spacing: 0.03em;
+
 }

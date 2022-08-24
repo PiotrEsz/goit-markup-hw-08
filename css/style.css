@@ -15,6 +15,12 @@ body{
     --button:#F5F4FA;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .studio{
     color:var(--black)
 }
@@ -25,7 +31,9 @@ body{
     line-height: 1.19;
     color: var(--hover-focus);
     text-decoration: none;
+    padding: 15px;
 }
+
    
 .path{
     color: var(--black);
@@ -34,6 +42,9 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: inline-block;
+    vertical-align: baseline;
+
     }
 .path-other{
         color:var(--hover-focus);
@@ -79,9 +90,11 @@ body{
     color:var(--black);
     background-color: var(--button);
     cursor: pointer;
+    border-radius: 4px;
 }
 .btn-inside{
     background-color: var(--hover-focus);
+    
 }
 .btn-blue-background:hover{
     background-color: var(--hover-focus);
@@ -189,4 +202,19 @@ color:var(--grey);
 .active{
     color:var(--hover-focus)
 
+}
+.container{
+    max-width: 1200px;
+}
+.section{
+    padding: 94px;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    margin-left:200px;
+    align-self:baseline;
 }

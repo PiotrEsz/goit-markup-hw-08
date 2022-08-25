@@ -1,8 +1,13 @@
 body{
     font-family:"Roboto","Raleway",sans-serif;
     color:var(--grey);
+    background-color: var(--white);
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin:0;
+    padding: 0;
+    width: 1600px;
+    font-weight: 400;
 
 }
 :root{
@@ -15,11 +20,7 @@ body{
     --button:#F5F4FA;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 .studio{
     color:var(--black)
@@ -28,22 +29,21 @@ body{
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height:1.19;
     color: var(--hover-focus);
-    text-decoration: none;
-    padding: 15px;
+    padding: 24px 0 24px 15px;
+  
 }
 
-   
+   a{
+    text-decoration: none;
+}
 .path{
     color: var(--black);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: inline-block;
-    vertical-align: baseline;
 
     }
 .path-other{
@@ -80,17 +80,18 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-   
+    text-transform: uppercase;
+    padding: 200px 0 30px;
+    margin:0;
 }
 .btn{
     font-weight: 700;
-    font-size:16px ;
-    line-height:1.88 ;
-    letter-spacing: 0.03em;
-    color:var(--black);
-    background-color: var(--button);
-    cursor: pointer;
-    border-radius: 4px;
+    font-size:16px;
+    color:var(--white);
+    cursor:pointer;
+    border-radius:4px;
+    width:200px;
+    height:50px;
 }
 .btn-inside{
     background-color: var(--hover-focus);
@@ -108,12 +109,14 @@ body{
     line-height:1.72 ;
     color:var(--black);
     letter-spacing:0.03em;
+    display: flex;
 }
 .text-style{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    display: flex;
     
 }
 .second-header{
@@ -204,17 +207,35 @@ color:var(--grey);
 
 }
 .container{
-    max-width: 1200px;
+    width: 1200px;
+    margin:0 auto;
 }
-.section{
-    padding: 94px;
+.header-section{
+    background-color:var(--background);
+    color:var(--button);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 200px;
 
+}
+.header{
+    display:flex;
+    border-bottom: 1px solid #ececec;
 }
 .menu{
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    margin:0;
+    gap: 46px;
     list-style: none;
-    margin-left:200px;
-    align-self:baseline;
+    padding: 32px 0 31px 93px;
+}
+.contacts{
+    gap: 50px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 32px 27px 31px 371px;
 }

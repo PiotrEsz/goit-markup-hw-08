@@ -1,13 +1,13 @@
 {
-    "printWidth": 100,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "arrowParens": "avoid",
-    "proseWrap": "always"
-    
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.autoSave":"afterDelay",
+    "editor.formatOnSave":true,
+    "editor.formatOnType":true,
+    "editor.fontSize":12,
+    "editor.fontWeight":"normal",
+    "editor.defaultFormatter":"esbenp.prettier-vscode",
+    "editor.minimap.enabled":false,
+    "liveServer.settings.donotShowInfoMsg":true,
+    "liveServer.settings.donotVerifyTags":true,
+    "bracketSameLine":true
   }

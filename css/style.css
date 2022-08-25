@@ -123,58 +123,82 @@ body{
     font-weight: 700;
     font-size:36px;
     line-height: 1.72;
-    letter-spacing: 0.03em;
     text-align: center;
     color:var(--black);
+    margin:0 auto;
+    padding: 0 424px 50px;
 }
 .third-header{
 font-size: 36px;
 font-weight: 700;
 line-height: 1.17;
-letter-spacing: 0.03em;
 text-align: center;
-color:var(--black)
+color:var(--black);
+margin:0;
+padding: 94px 495px 50px;
 
 }
 .name-person{
 font-size: 16px;
 font-weight: 500;
-line-height: 1.19;
+line-height: 1.1875;
 letter-spacing: 0.03em;
 color:var(--black);
+text-align:center;
+margin: 0;
+margin-bottom: 10px;
+padding: 30px 99px 10px;
 
 }
 .profession{
 font-size: 16px;
 font-weight: 400;
-line-height: 1.19px;
+line-height: 1.1875px;
 letter-spacing: 0.03em;
+text-align:center;
+margin: 0 auto;
+padding-bottom: 30px;
 
 }
 
 .filling{
-    color: var(--white);
+    color:var(--hover-focus);
+
+
+}
+.footer-logo{
+    color:var(--white)
+}
+
+.footer-logo-style{
+font-family: 'Raleway';
+font-size: 26px;
+font-weight: 700;
+line-height: 1.19230769;
+margin: 0;
+padding-top: 66px;
+padding-bottom: 20px;
+display: block;
 }
 .background{
     background-color: var(--background);
 }
 .city{
-font-size: 14px;
-font-weight: 400;
+font-style:normal;
 line-height: 1.71;
-letter-spacing: 0.03em;
-text-align: left;
 color: var(--white);
+display:flex;
+flex-direction: column;
+gap:9px;
+margin:0;
+padding-bottom: 62px;
 
 }
 .contact-details{
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
-letter-spacing: 0.03em;
-text-align: left;
 color:rgba(255, 255,255,0.6);
-text-decoration: none;
 
 }
 .contact-details:hover{
@@ -242,12 +266,41 @@ color:var(--grey);
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding:94px 0;
 }
 
 .description {
     display: flex;
     list-style: none;
     gap: 30px;
+    justify-content: center;
+    margin:0;
+    padding: 94px 15px;
+}
+.specializations{
+    display:flex;
+    gap:30px;
+    list-style: none;
+    justify-content:center;
+    margin:0;
+    padding: 0 15px 94px;
+}
+.team-background{
+    background-color:var(--button) ;
+}
+.flex-images{
+    display:flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    margin:0;
+    padding: 0 15px 102px;
+}
+.flex-images-item{
+    background-color:var(--white);
+        box-shadow: 
+        0px 1px 3px rgb(0 0 0 / 12%), 
+        0px 1px 1px rgb(0 0 0 / 14%), 
+        0px 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 0px 0px 4px 4px;
 }

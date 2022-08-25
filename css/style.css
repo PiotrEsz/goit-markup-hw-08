@@ -109,15 +109,15 @@ body{
     line-height:1.72 ;
     color:var(--black);
     letter-spacing:0.03em;
-    display: flex;
+
 }
 .text-style{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    display: flex;
-    
+
+
 }
 .second-header{
     font-weight: 700;
@@ -238,4 +238,15 @@ color:var(--grey);
     list-style: none;
     margin: 0;
     padding: 32px 27px 31px 371px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.description{
+    display:flex;
+    list-style: none;
+    gap: 30px;
 }

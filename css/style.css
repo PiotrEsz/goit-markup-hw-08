@@ -225,14 +225,15 @@ color:var(--grey);
     display:flex;
     border-bottom: 1px solid #ececec;
 }
-.menu{
+.menu {
     display: flex;
-    margin:0;
+    margin: 0;
     gap: 46px;
     list-style: none;
     padding: 32px 0 31px 93px;
 }
-.contacts{
+
+.contacts {
     gap: 50px;
     display: flex;
     list-style: none;
@@ -245,8 +246,8 @@ color:var(--grey);
     padding-bottom: 94px;
 }
 
-.description{
-    display:flex;
+.description {
+    display: flex;
     list-style: none;
     gap: 30px;
 }

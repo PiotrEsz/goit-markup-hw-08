@@ -348,7 +348,7 @@ padding: 0 24px 20px;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19230769;
-    margin: 0;
+    margin-left: 15px;
     display: inline-block;
     letter-spacing: 0.03em;
 }
@@ -358,4 +358,15 @@ padding: 0 24px 20px;
 .padding-agency{
     padding-top: 66px;
     padding-bottom: 62px;
+}
+.contact-details-portfolio-footer{
+list-style: none;
+margin: 0px;
+gap: 9px;
+display: flex;
+flex-direction: column;
+padding-left: 15px;
+padding-top: 20px;
+font-style: normal;
+color: var(--white);
 }

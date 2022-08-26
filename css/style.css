@@ -193,26 +193,27 @@ padding-bottom: 30px;
 
 .footer-logo-style{
 font-family: 'Raleway';
-font-size: 26px;
+font-style: normal;
 font-weight: 700;
-line-height: 1.19230769;
-margin: 0;
-padding-top: 66px;
-padding-bottom: 20px;
-display: block;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: var(--white);
+margin: 0px;
 }
 .background{
     background-color: var(--background);
 }
 .city{
-font-style:normal;
-line-height: 1.71;
-color: var(--white);
-display:flex;
+display: flex;
+list-style: none;
 flex-direction: column;
-gap:9px;
-margin:0;
-padding-bottom: 62px;
+padding-left: 0px;
+gap: 9px;
+padding-top: 20px;
+font-style: normal;
+color: var(--white);
+margin: 0;
 
 }
 .contact-details{
@@ -329,12 +330,32 @@ padding: 0 24px 20px;
 }
 .portfolio-flex-images{
     display:flex;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
     margin:0px;
     list-style:none;
-    padding:0 15px 94px;
+    padding:0 10px 94px;
 }
 .border-background{
     border-bottom: 1px solid var(--border-portfolio);
+}
+.footer-portfolio{
+    background-color: var(--background);
+}
+.logo-type-footer-portfolio{
+    font-family: 'Raleway';
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19230769;
+    margin: 0;
+    display: inline-block;
+    letter-spacing: 0.03em;
+}
+.padding-footer{
+    padding:60px 0;
+}
+.padding-agency{
+    padding-top: 66px;
+    padding-bottom: 62px;
 }

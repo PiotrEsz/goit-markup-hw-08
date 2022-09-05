@@ -21,6 +21,7 @@ body {
     --social-links-icon: #afb1b8;
     --WhiteTransparent: #ffffff99;
     --BackgroundFootter: #ffffff1a;
+    --BorderColor: #ECECEC;
 }
 
 .container {
@@ -33,18 +34,19 @@ body {
 }
 
 /* -----------------------------------------Header------------------------------------------------------ */
+.border-header {
+    border-bottom: 1px solid #ececec;
+}
 
 .header {
     display: flex;
-    border-bottom: 1px solid #ececec;
-
+    align-items: center;
+    border-bottom: solid 1px var(--BorderColor)
 }
 
 .studio {
     color: var(--black);
 }
-
-
 
 .logo-type {
     font-family: "Raleway";
@@ -156,17 +158,25 @@ a {
 
 
 /* ----------------------------Main Section---------------------------------------- */
-.header-section {
-    color: var(--button);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 200px;
+.background-color-header {
+    color: var(--white);
+}
+
+.background-slider {
     background: rgba(47, 48, 58, 0.4) url(../images/img.bg.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 1600px;
+
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 200px 0;
 }
 
 .main-header {
@@ -176,20 +186,22 @@ a {
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    padding: 200px 0 30px;
     margin: 0;
 }
 
 .btn-service {
-    background-color: var(--hover-focus);
-    border-style: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background: var(--hover-focus);
     color: var(--white);
-    width: 200px;
-    height: 50px;
+    background: var(--hover-focus);
+    border-radius: 4px;
+    border-style: none;
     font-weight: 700;
     font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    padding: 10px 41px 10px 42px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
 }
 
 .description {
@@ -198,7 +210,6 @@ a {
     gap: 30px;
     justify-content: center;
     margin: 0;
-    padding: 94px 15px;
 }
 
 .antenna,
@@ -244,7 +255,6 @@ a {
     list-style: none;
     justify-content: center;
     margin: 0;
-    padding: 0 15px 94px;
 }
 
 /* ----------------------------------------------OUR TEAM-------------------------------------------- */
@@ -505,7 +515,7 @@ a {
     list-style: none;
     gap: 8px;
     margin: 0;
-    padding: 94px 318px 50px 310px;
+    padding: 0 310px;
 }
 
 .btn:hover,
@@ -524,11 +534,14 @@ a {
     flex-wrap: wrap;
     margin: 0px;
     list-style: none;
-    padding: 0 10px 94px;
+    padding: 94px 0;
 }
 
 .border-background {
     border-bottom: 1px solid var(--border-portfolio);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .description-image {
@@ -539,7 +552,7 @@ a {
     text-align: left;
     color: var(--black);
     margin: 0px;
-    padding: 20px 24px 4px;
+    padding: 20px 20px 4px;
 }
 
 .image-caption {
@@ -547,7 +560,7 @@ a {
     line-height: 1.875;
     color: var(--grey);
     margin: 0px;
-    padding: 0 24px 20px;
+    padding: 0 20px 20px;
 }
 
 /* -----------------------------------------PORTFOLIO FOOTER------------------------------- */

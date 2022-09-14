@@ -163,6 +163,10 @@ a {
     margin-right: 10px;
 }
 
+ul {
+    padding: 0;
+}
+
 /* ----------------------------Main Section---------------------------------------- */
 .background-color-header {
     color: var(--white);

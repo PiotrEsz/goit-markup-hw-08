@@ -140,6 +140,7 @@ a {
 .phone-icon {
     fill: var(--grey);
     transition: 0.2s;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon:hover,
@@ -207,6 +208,7 @@ a {
     padding: 10px 41px 10px 42px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .description {
@@ -359,6 +361,8 @@ a {
 .icon-social:hover {
     background-color: var(--hover-focus);
     fill: var(--white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social:focus {
@@ -376,7 +380,8 @@ a {
 
 .icon-social-item {
     fill: var(--grey);
-    background-color: var(--white)
+    background-color: var(--white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------------------------OUR CLIENTS--------------------------------- */
@@ -518,7 +523,9 @@ a {
 .icon-social-footer:focus {
     transition: 0.2s;
     background-color: var(--hover-focus);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* -----------------------------------------PORTFOLIO BUTTONS-------------------------------------- */
 
@@ -572,7 +579,16 @@ a {
     margin: 0;
     margin-block: 0;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
+
+.border-background:hover {
+    cursor: pointer;
+    border: 1px solid var(--border-portfolio);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .overlay {
     position: absolute;
@@ -592,19 +608,19 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay__text {
+.overlay-text {
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: var(--background-color);
+    color: var(--white);
     text-align: start;
     padding: 49px 45px 49px 24px;
     margin: 0;
 }
 
-.border-background,
-.overlay-layer {
-    transfrom: translateY(0);
+.border-background:hover .overlay-layer {
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .description-image {
@@ -632,4 +648,43 @@ a {
     text-decoration: underline;
 }
 
-/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------------MODAL.JS------------------------------ */
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: opacity 1500ms ease-in-out, visibility 1500ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--white);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

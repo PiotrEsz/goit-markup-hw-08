@@ -49,7 +49,7 @@
       <div class="background-slider">
         <div class="header-section container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA<br> DLA WASZEGO BIZNESU</h1>
-          <button class="btn-service" type="button">Zamów usługę</button>
+          <button class="btn-service" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </div>
     </section>
@@ -289,6 +289,12 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>x</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

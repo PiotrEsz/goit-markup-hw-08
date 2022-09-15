@@ -287,11 +287,59 @@
           </a>
         </div>
       </div>
+      <div>
+        <h4 class="sign-in-footer">Zapisz się do newslettera</h4>
+        <input type="email" class="sign-in" placeholder="E-mail">
+        <button type="submit" class="button-newsletter">Zapisz się
+          <svg class="sign-up-logo-btn">
+            <use xlink:href="./images/icon.svg#icon-sign-in" width="24" height="24" x="20" y="0">
+            </use>
+          </svg>
+        </button>
+      </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>x</button>
+      <h6 class="form-header-modal">Zostaw swoje dane w formularzu poniżej</h6>
+      <label for="full-name" class="form-hover">
+        Imie
+        <svg class="form-icons icon-position1">
+          <use xlink:href="./images/icon.svg#icon-name" width="14" height="14"></use>
+        </svg><input type="text" name="user-name" class="form-input" id="full-name">
+      </label>
+      <label for="phone-number" class="form-hover">
+        Telefon
+        <svg class="form-icons icon-position2">
+          <use xlink:href="./images/icon.svg#icon-phone" width="15" height="15"></use>
+        </svg><input type="tel" name="phone-number" class="form-input" id="phone-number">
+      </label>
+      <label for="email" class="form-hover">
+        Email
+        <svg class="form-icons icon-position3">
+          <use xlink:href="./images/icon.svg#icon-e-mail" width="17" height="17">
+          </use>
+        </svg><input type="email" name="email" class="form-input" id="email">
+      </label>
+      <label>
+        Komentarz
+        <textarea name="comment" placeholder="Wprowadź tekst" class="form-input form-comment"></textarea>
+      </label>
+      <label class="terms-and-conditions">
+        <input type="checkbox">
+        <svg class="tick">
+          <use xlink:href="./images/icon.svg#icon-tick" width="11" height="8"></use>
+        </svg>
+        <span class="checkmark"></span>
+        Oświadczam iż akceptuje
+        <a href="#" class="link-terms">Regulamin</a>
+        i
+        <a href="#" class="link-terms">Politykę Prywatności.</a>
+      </label>
+      <label>
+        <button type="submit" class="btn-service">Wyślij</button>
+      </label>
     </div>
   </div>
   <script src="./js/modal.js"></script>

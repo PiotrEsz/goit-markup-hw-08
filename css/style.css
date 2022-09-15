@@ -23,6 +23,7 @@ body {
     --BackgroundFootter: #ffffff1a;
     --BorderColor: #ECECEC;
     --BackgroundColorWhatWeDo: #2f303acc;
+    --IconFotter: rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -671,8 +672,12 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     background-color: var(--white);
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .close-btn {
@@ -691,4 +696,203 @@ ul {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* ----------------------------------------MODAL-FORM-------------------------- */
+.form-header-modal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2.3px;
+    color: var(--black);
+}
+
+
+.form-input {
+    display: block;
+    padding: 0 0 0 30px;
+    margin: 3px 0 10px 0;
+    height: 40px;
+    width: 448px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-form {
+    margin: 11px 0 14px 0;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.form-icons {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-position1 {
+    top: 126px;
+    left: 52px;
+}
+
+.icon-position2 {
+    top: 192px;
+    left: 52px;
+}
+
+.icon-position3 {
+    top: 258px;
+    left: 51px;
+}
+
+/* ----------------------KOMENTARZ-------------------------------------- */
+.form-comment {
+    height: 120px;
+    width: 448px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    resize: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------------------REGULAMIN---------------------- */
+.tick {
+    position: absolute;
+    width: 11px;
+    height: 8px;
+    left: 47px;
+    top: 462px;
+    z-index: 999;
+    fill: var(--white);
+    cursor: pointer;
+}
+
+.terms-and-conditions {
+    font-size: 14px;
+    padding: 15px 0 20px 0;
+}
+
+.terms-and-conditions input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.terms-and-conditions input:checked~.checkmark {
+    background-color: var(--hover-focus);
+    border: none;
+}
+
+.checkmark {
+    position: absolute;
+    cursor: pointer;
+    height: 15px;
+    width: 16px;
+    top: 458px;
+    left: 45px;
+    border-radius: 2px;
+    background-color: var(--white);
+    border: var(--black) 2px solid;
+}
+
+.link-terms {
+    color: var(--hover-focus);
+    text-decoration: underline;
+}
+
+.link-terms:hover {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+/*-------------------------SEKCJA PSEUDOKLAS--------------------*/
+.form-comment::placeholder {
+    color: rgba(117, 117, 117, 0.658);
+}
+
+.form-comment:hover,
+.form-comment:focus,
+.form-comment:active {
+    border: var(--hover-focus) 1px solid;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-hover:hover>.form-input,
+.form-hover:focus>.form-input {
+    border: var(--hover-focus) 1px solid;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-hover:hover>.form-icons,
+.form-hover:focus>.form-icons {
+    fill: var(--hover-focus);
+}
+
+/* ----------------------------------NEWSLETTER-------------------------------- */
+.sign-in-footer {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    position: relative;
+
+}
+
+.sign-in {
+    height: 50px;
+    width: 358px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+}
+
+.button-newsletter {
+    background-color: var(--hover-focus);
+    border-radius: 4px;
+    border-style: none;
+    padding-right: 42px;
+    width: 200px;
+    height: 50px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto";
+    transition: 0.2s;
+}
+
+.button-newsletter:hover {
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--IconFotter);
+}
+
+.button-newsletter:active {
+    border: 1px solid var(--hover-focus);
+    box-shadow: none;
+}
+
+.sign-in:hover,
+.sign-in:active,
+.sign-in:focus {
+    border: 1px solid var(--hover-focus);
+    box-shadow: none;
+    outline: none;
+    color: var(--white);
+    transition: 0.2s;
+}
+
+.sign-up-logo-btn {
+    position: absolute;
+    fill: var(--white);
+    width: 65px;
+    height: 24px;
+    margin-left: -4px;
+    margin-top: -2px;
 }

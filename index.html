@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
 
@@ -20,7 +20,7 @@
         <a class="header__logo" href="index.html">Web<span class="header__logo--recolor">Studio</span></a>
         <nav>
           <ul class="header__list-nav">
-            <li class="header__list-menu"><a class="header__list-nav--a header__agency" href="index.html">Agencja</a>
+            <li class="header__list-menu"><a class="header__list-nav--a header__link" href="index.html">Agencja</a>
             </li>
             <li class="header__list-menu"><a class="header__list-nav--a" href="portfolio.html">Portfolio</a></li>
             <li class="header__list-menu"><a class="header__list-nav--a" href="Kontakt.html">Kontakt </a></li>
@@ -49,7 +49,7 @@
   </header>
   <main>
     <section>
-      <div class="background__image">
+      <div class="image__background">
         <div class="section-top container">
           <h1 class="section-top__layout">EFEKTYWNE ROZWIĄZANIA<br> DLA WASZEGO BIZNESU</h1>
           <button class="button" type="button" data-modal-open>Zamów usługę</button>
@@ -60,7 +60,7 @@
       <div class="container">
         <ul class="list__icon">
           <li>
-            <svg class="icons" width="270" height="120">
+            <svg class="list__icon--background" width="270" height="120">
               <use xlink:href="./images/icon.svg#icon-antenna-1"></use>
             </svg>
             <h2 class="list__heading">LOREP IPSUM</h2>
@@ -69,7 +69,7 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
           </li>
           <li class=>
-            <svg class="icons" width="270" height="120">
+            <svg class="list__icon--background" width="270" height="120">
               <use xlink:href="./images/icon.svg#icon-clock-1"></use>
             </svg>
             <h2 class="list__heading">LOREP IPSUM</h2>
@@ -78,7 +78,7 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
           </li>
           <li>
-            <svg class="icons" width="270" height="120">
+            <svg class="list__icon--background" width="270" height="120">
               <use xlink:href="./images/icon.svg#icon-diagram-1"></use>
             </svg>
             <h2 class="list__heading">LOREP IPSUM</h2>
@@ -87,7 +87,7 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
           </li>
           <li>
-            <svg class="icons" width="270" height="120">
+            <svg class="list__icon--background" width="270" height="120">
               <use xlink:href="./images/icon.svg#icon-astronaut-1"></use>
             </svg>
             <h2 class="list__heading">LOREP IPSUM</h2>
@@ -103,31 +103,31 @@
         <h2 class="section__heading">Czym się zajmujemy</h2>
         <ul class="list__specializations">
           <li>
-            <div class="relative__img">
+            <div class="image__relative">
               <img src="images/jpg1.jpg" alt="programista piszący kod" width="370" height="294" />
-              <p class="absolute__paragraph">APLIKACJE INTERNETOWE</p>
+              <p class="image__absolute">APLIKACJE INTERNETOWE</p>
             </div>
           </li>
           <li>
-            <div class="relative__img">
+            <div class="image__relative">
               <img src="images/jpg2.jpg" alt="programista tworzy stronę" width="370" height="294" />
-              <p class="absolute__paragraph">APLIKACJE MOBILNE</p>
+              <p class="image__absolute">APLIKACJE MOBILNE</p>
             </div>
           </li>
           <li>
-            <div class="relative__img">
+            <div class="image__relative">
               <img src="images/jpg3.jpg" alt="programista tworzy style" width="370" height="294" />
-              <p class="absolute__paragraph">ROZWIĄZANIA GRAFICZNE</p>
+              <p class="image__absolute">ROZWIĄZANIA GRAFICZNE</p>
             </div>
           </li>
         </ul>
         <div>
     </section>
-    <section class="section team__background">
+    <section class="section section__background">
       <div class="container ">
         <h2 class="section__heading-two">Nasz zespół</h2>
-        <ul class="images__whatwedo">
-          <li class="images__whatwedo--item">
+        <ul class="image__whatwedo">
+          <li class="image__whatwedo--item">
             <img src="images/zespol1.jpg" alt="Product Designer John Doe" width="270" height="260" />
             <h4 class="name-person">John Doe</h4>
             <p class="profession">Product Designer</p>
@@ -147,7 +147,7 @@
             </div>
 
           </li>
-          <li class="images__whatwedo--item">
+          <li class="image__whatwedo--item">
             <img src="images/zespol2.jpg" alt="Frontend Developer John Doe" width="270" height="260" />
             <h4 class="name-person">John Doe</h4>
             <p class="profession">Frontend Developer</p>
@@ -166,7 +166,7 @@
               </svg>
             </div>
           </li>
-          <li class="images__whatwedo--item">
+          <li class="image__whatwedo--item">
             <img src="images/zespol3.jpg" alt="Marketing John Doe" width="270" height="260" />
             <h4 class="name-person">John Doe</h4>
             <p class="profession">Marketing</p>
@@ -185,7 +185,7 @@
               </svg>
             </div>
           </li>
-          <li class="images__whatwedo--item">
+          <li class="image__whatwedo--item">
             <img src="images/zespol4.jpg" alt="Ul Designer John Doe" width="270" height="260" />
             <h4 class="name-person">John Doe</h4>
             <p class="profession">Ul Designer</p>
@@ -259,7 +259,7 @@
     <div class="container container__footer">
       <div>
         <a class="footer__logo" href="./index.html">Web<span class="footer__logo--recolor">Studio</span></a>
-        <address class="adress__details address__details--position">
+        <address class="footer__adress-details">
           m. Warszawa, Aleje Jerozolimskie 21
           <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
           <a class="footer__phone" href="tel:+48111111111">+48 111 111 111</a>
@@ -291,7 +291,7 @@
         </div>
       </div>
       <div>
-        <h4 class="form-footer__heading">Zapisz się do newslettera</h4>
+        <h4 class="footer__heading">Zapisz się do newslettera</h4>
         <input type="email" class="footer__input" placeholder="E-mail">
         <button type="submit" class="button__newsletter">Zapisz się
           <svg class="icon-send">
@@ -334,7 +334,7 @@
         <svg class="form__checkmark-icon">
           <use xlink:href="./images/icon.svg#icon-tick" width="11" height="8"></use>
         </svg>
-        <span class="span-checkmark"></span>
+        <span class="form__checkmark"></span>
         Oświadczam iż akceptuje
         <a href="#" class="form__link">Regulamin</a>
         i

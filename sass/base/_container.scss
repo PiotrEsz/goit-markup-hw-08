@@ -1,0 +1,11 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  &__footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 70px;
+    padding: 55.5px 0;
+  }
+}

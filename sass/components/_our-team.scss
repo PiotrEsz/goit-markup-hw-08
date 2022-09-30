@@ -1,0 +1,27 @@
+.name-person {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 30px 99px 10px;
+}
+
+.profession {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1875px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.social-row {
+  display: block;
+  justify-content: center;
+  padding-bottom: 30px;
+}

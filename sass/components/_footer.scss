@@ -1,0 +1,105 @@
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--hover-focus);
+  padding: 24px 0 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin: 0;
+  &--recolor {
+    color: var(--white);
+    margin-right: 100px;
+  }
+}
+
+.footer__mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--WhiteTransparent);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus);
+    transition: 0, 4s;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: underline;
+  }
+}
+.footer__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--WhiteTransparent);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus);
+    transition: 0, 4s;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__box-socials {
+  margin-top: 12px;
+  &--position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.footer__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid var(--hover-focus);
+    box-shadow: none;
+    outline: none;
+    color: var(--white);
+    transition: 0.2s;
+  }
+}
+.footer__heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  position: relative;
+}
+.footer__social-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--button);
+  margin-bottom: 20px;
+}
+.footer--background-color {
+  background: var(--background);
+}
+.footer__adress-details {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}

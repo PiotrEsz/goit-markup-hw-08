@@ -1,0 +1,20 @@
+.block {
+  display: block;
+  margin: 0;
+}
+
+.block__clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--white);
+  border: 1px solid var(--social-links-icon);
+  border-radius: 4px;
+  transition: 0.4s;
+  &:hover,
+  &:focus {
+    border-color: var(--hover-focus);
+  }
+}

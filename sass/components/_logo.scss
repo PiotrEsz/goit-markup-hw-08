@@ -1,0 +1,20 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font-atr(700, 1.19, 0.03em);
+  font-size: get-size("mobile-logo");
+  color: $link-text-color;
+
+  &--black {
+    color: $logo-secondary-color;
+  }
+
+  &--white {
+    color: $logo-primary-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: get-size("mobile-logo-dekstop");
+  }
+}

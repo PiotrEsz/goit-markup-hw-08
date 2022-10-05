@@ -1,0 +1,38 @@
+.link {
+  text-decoration: none;
+  color: $primary-text-color;
+
+  &:focus,
+  &:hover {
+    color: $link-text-color;
+  }
+
+  &--active {
+    color: $link-text-color;
+  }
+
+  &--active::after {
+    position: absolute;
+    content: "";
+    background: $link-text-color;
+    border-radius: 2px;
+    border: 1px solid;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(32px);
+  }
+
+  &:hover .header__icon-mail {
+    fill: $button-icon-color;
+    transition-property: fill, color;
+    @include vis-effect();
+  }
+
+  &:hover .header__icon-phone {
+    fill: $button-icon-color;
+    transition-property: fill, color;
+    @include vis-effect();
+  }
+}

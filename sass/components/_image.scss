@@ -28,7 +28,6 @@ img {
   }
 }
 
-//--------------------------
 .img-container-secondary {
   display: flex;
   flex-direction: column;
@@ -92,20 +91,22 @@ img {
   }
 
   &__caption {
-    // border: 1px solid $product-border;
     border-top: 0;
     padding: 20px 24px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .img-container-secondary__overlay {
     height: 294px;
   }
+
   .img-container-secondary__image {
     width: 354px;
     height: 294px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .img-container-secondary__image {
     width: 370px;

@@ -2,13 +2,11 @@
   cursor: pointer;
   border-style: none;
   font-size: get-size("button");
-  // font-size: toRem(get-size('button'));
 }
 
 .button {
   @extend %button__common;
   @include font-atr(700, 1.88, 0.06em);
-  //weight, height, spacing
   width: 200px;
   height: 50px;
   background-color: $button-icon-color;
@@ -29,6 +27,7 @@
     background-color: $section-background-color;
     outline: none;
   }
+
   &--left {
     padding: 0 0 0 42px;
     text-align: left;
@@ -38,7 +37,6 @@
 .button-secondary {
   @extend %button__common;
   @include font-atr(500, 1.62, 0.03em);
-  //weight, height, spacing
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: $bolded-text-color;
@@ -58,6 +56,7 @@
       0px 2px 2px $btn-shadow-third;
   }
 }
+
 .button-close {
   position: absolute;
   right: 8px;
@@ -75,12 +74,14 @@
     border: 1 px solid $button-icon-color;
     fill: $button-text-color;
   }
+
   &__icon {
     width: 11px;
     height: 11px;
     fill: $bolded-text-color;
     transition: fill 1s ease;
   }
+
   &__icon:hover {
     fill: $button-text-color;
   }

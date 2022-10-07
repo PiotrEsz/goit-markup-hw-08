@@ -5,7 +5,6 @@
 
   &__address {
     @include font-atr(400, 1.71, 0.03em);
-    // @include set-flex(column,flex-start,stretch);
     @include set-flex(column);
     row-gap: 8px;
     margin: 0;
@@ -16,6 +15,7 @@
     border-radius: 50%;
     fill: $primary-background-color;
   }
+
   .icon:hover {
     background-color: $button-icon-color;
     border-radius: 50%;
@@ -85,9 +85,11 @@
     flex-wrap: wrap;
     column-gap: 144px;
   }
+
   .footer__input {
     width: 450px;
   }
+
   .footer__form {
     @include set-flex(column);
   }
@@ -101,19 +103,24 @@
     flex-wrap: wrap;
     column-gap: 70px;
   }
+
   .footer__address {
     align-items: flex-start;
   }
+
   .footer__socials {
     margin-right: 8px;
   }
+
   .footer__form {
     @include set-flex(row, center, baseline);
     gap: 12px;
   }
+
   .footer__input {
     width: 358px;
   }
+
   .footer__heading {
     text-align: left;
   }

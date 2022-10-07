@@ -14,7 +14,6 @@
   &__icon-mail {
     width: 14px;
     height: 10px;
-    // margin-right: 10px;
 
   }
 
@@ -24,7 +23,6 @@
   }
 
   &__contact {
-    // display: flex;default: row (flex-direction),flex-start (justify-content), stretch (align-items)
     @include set-flex(row);
     column-gap: 50px;
     margin-left: auto;
@@ -72,6 +70,5 @@
 
   .header__container {
     padding: 24px 0 25px 0;
-    // column-gap: 83px;
   }
 }

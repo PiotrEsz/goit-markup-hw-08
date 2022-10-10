@@ -1,8 +1,5 @@
 .section {
   padding: 60px 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 320px;
 
   &__heading {
     @include font-atr(700, 1.17, 0.03em);

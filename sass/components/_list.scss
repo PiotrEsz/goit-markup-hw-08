@@ -1,9 +1,9 @@
 .list {
   @include set-flex(row);
   gap: 30px;
-  flex-wrap: wrap;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 215px;
+  padding-right: 215px;
   margin: 0 auto;
   letter-spacing: 0.03em;
 
